@@ -5,8 +5,8 @@ export const Work = () => {
   return (
     <div className=' w-[100vw] h-[100vh] flex flex-row bg-gray-100'>
        <div className='w-[50%] h-full relative'>
-       <img src={bgImage} className='h-[85%]  w-[90%] absolute'/>
-       <img src={bgFilter} className='h-[85%] w-[90%] absolute'/>
+       <img src={bgImage} className='h-[100%]  w-[90%] absolute'/>
+       <img src={bgFilter} className='h-[100%] w-[90%] absolute'/>
        <p className='text-4xl mt-[20rem] ml-[10rem]
          font-bold text-orange-500 absolute'>
             Are You Ready to Accelerate<br/>

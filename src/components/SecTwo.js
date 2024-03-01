@@ -18,7 +18,7 @@ export const SecTwo = () => {
             
           
         </div>
-        <div className='h-[2px] w-full bg-gray-600'></div>
+        <div className='h-[2px] w-[90%] flex mx-auto bg-gray-400'></div>
     </div>
   )
 }
