@@ -18,7 +18,7 @@ export const WhoSec = () => {
           </div>
           
         </div>
-        <div className='hidden sm:flex flex-col w-[50%] justify-center relative'>
+        <div className='hidden lg:flex flex-col w-[50%] justify-center relative'>
         <img src={picture} className='h-full  w-full absolute rounded-l-full '/>
        <img src={picFilter} className='h-full  w-full absolute rounded-l-full'/>
            <p className='text-6xl ml-[20rem] text-orange-500 absolute'> WHO WE ARE ?</p>
