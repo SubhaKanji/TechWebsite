@@ -2,22 +2,26 @@ import React from 'react'
 import heroimg from'../image/heroImg2.png'
 import herofiler from '../image/herofilter2.png'
 import logo from '../image/logo1.png'
+import { HiOutlineMenu } from "react-icons/hi";
+import { IoIosCloseCircleOutline } from "react-icons/io";
+import { useState } from 'react';
 export const HeroSec = () => {
+  let [isOpen , setisOpen]=useState(false)
   return (
     <div className='relative lg:w-[100vw] lg:h-[100vh] w-screen h-screen mt-2 flex flex-col'>
       <img src={heroimg} className='h-[100%]  w-[100%] absolute'/>
       <img src={herofiler} className='h-[100%]  w-[100%] absolute'/>
 
-      <div className='w-full h-full absolute flex flex-row mt-4'>
+      <div className='w-full h-full absolute flex flex-row  mt-4'>
         <div>
         <img src={logo} className='lg:h-[5rem] h-[2rem] lg:w-[10rem] w-[4rem] ml-[1rem] lg:ml-[15rem]  lg:mt-4 mt-1'/>
         </div>
 
 
-       <div>
+       <div className='hidden lg:block'>
        <nav>  
             <ul className='flex flex-row  lg:space-x-10 space-x-4 lg:font-semibold  font-medium
-            lg:gap-x-px mb-4 lg:ml-[30rem] ml-6 lg:mt-6 mt-2 text-white lg:text-lg text-xs'>
+            lg:gap-x-px mb-4 lg:ml-[30rem] ml-6 lg:mt-6 mt-2 text-white lg:text-lg text-xs '>
                 <li><a href="#">Home</a></li> 
                 <li><a href="#">Services</a></li>
                 <li><a href="#">About Us</a></li>
@@ -25,6 +29,12 @@ export const HeroSec = () => {
             </ul>
     </nav>
        </div>
+       <div onClick={()=>setisOpen(!isOpen)} className='lg:hidden absolute right-10 top-5'>
+        {
+          isOpen ? <IoIosCloseCircleOutline />:<HiOutlineMenu />
+        }
+
+        </div>
       </div>
             
       <div className='flex flex-col lg:w-11/12 h-[100vh] lg:mt-[14rem] mt-[7rem] lg:ml-[15rem] ml-12 mr-10 sm:mr-0 lg:m-x-6
